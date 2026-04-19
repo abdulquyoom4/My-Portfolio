@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: #080c14;
+    color: #e2e8f0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .hero-glow::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -8%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(56,189,248,0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-glow::after {
+    content: '';
+    position: absolute;
+    bottom: -15%;
+    left: -5%;
+    width: 380px;
+    height: 380px;
+    background: radial-gradient(circle, rgba(129,140,248,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .contact-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #38bdf8, transparent);
+  }
+  /* Skills slider */
+  .slider-track {
+    display: flex;
+    width: max-content;
+    animation: slideTrack 28s linear infinite;
+  }
+  .slider-track:hover {
+    animation-play-state: paused;
+  }
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
