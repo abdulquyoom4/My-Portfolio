@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+
+  <!-- Background (dark gradient for contrast) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Subtle glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="5" y="5" width="90" height="90" rx="22"
+        fill="url(#bg)"/>
+
+  <!-- Code symbol -->
+  <text x="50%" y="54%"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        font-size="48"
+        font-family="Arial, sans-serif"
+        fill="#38bdf8"
+        filter="url(#glow)">
+    &lt;/&gt;
+  </text>
+
+</svg>
