@@ -25,11 +25,8 @@ const Skills = () => (
     </div>
 
     <div className="relative w-full overflow-hidden">
-
-      <div className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-        style={{ background: 'linear-gradient(to right, #080c14, transparent)' }} />
-      <div className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-        style={{ background: 'linear-gradient(to left, #080c14, transparent)' }} />
+      <div className=" absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none" />
+      <div className=" absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none" />
 
       <div className="slider-track py-4">
         {[...skills, ...skills].map((skill, i) => (
