@@ -25,10 +25,10 @@ const ProjectCard = ({ project }) => {
     <article
       className="group relative bg-card border border-border rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2 hover:border-accent/50 hover:shadow-[0_10px_40px_rgba(0,255,200,0.08)]"
     >
-      {/* Glow effect layer */}
+  
       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-b from-accent/5 to-transparent pointer-events-none" />
 
-      {/* Top */}
+
       <div className="p-6 flex-1 relative">
         <span className="font-mono text-[10px] text-accent2 bg-accent2/10 border border-accent2/20 rounded-full px-3 py-1 inline-block mb-4">
           {project.tag}
@@ -43,7 +43,7 @@ const ProjectCard = ({ project }) => {
         </p>
       </div>
 
-      {/* Bottom */}
+    
       <div className="p-4 border-t border-border flex flex-wrap gap-2 items-center">
         {project.techs.map((t) => (
           <span
@@ -102,7 +102,7 @@ const Projects = () => (
 <div
   className="
     flex md:grid md:grid-cols-2 md:gap-10
-    gap-0
+    gap-5
     overflow-x-auto md:overflow-visible
     snap-x snap-mandatory
     scroll-smooth

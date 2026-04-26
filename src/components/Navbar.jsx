@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-bg/80 backdrop-blur-md border-b border-border transition-colors duration-300">
 
-      <div className="flex items-center justify-around px-6 md:px-16 h-14">
+      <div className="flex items-center justify-between md:justify-around px-6 md:px-16 h-14">
 
         <span className="font-mono text-accent font-semibold text-lg tracking-widest">
           iAmAbdul
