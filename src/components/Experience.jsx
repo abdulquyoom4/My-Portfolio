@@ -1,16 +1,11 @@
 const experiences = [
     {
-    date: '2024 — PRESENT',
+    date: '2025 — PRESENT',
     role: 'MERN Stack Developer',
     company: 'Freelance / Self-Directed',
     desc: 'Building full-stack web applications. Deployed production-grade apps with React, Node.js, Express, MongoDB Atlas on Vercel & Railway.',
   },
-  {
-    date: '2023 — PRESENT',
-    role: 'CS Student',
-    company: 'University of Gujrat',
-    desc: 'Studying Computer Science — algorithms, HCI, machine learning, mobile development, and compiler construction.',
-  },
+  
 ]
 
 const Experience = () => (
