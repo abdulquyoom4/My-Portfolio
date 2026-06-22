@@ -2,7 +2,7 @@ const links = [
   { label: '📧 Email', href: 'mailto:abdulquyoom402@gmail.com' },
   { label: '⌥ GitHub', href: 'https://github.com/abdulquyoom4' },
   { label: '💼 LinkedIn', href: 'https://linkedin.com/in/abdulquyoom4' },
-  { label: '📄 Resume', href: '/Resume.pdf' },
+  { label: '📄 Resume', href: '/Abdul Quyoom Web Developer Resume.pdf' },
 ]
 
 const Contact = () => (
