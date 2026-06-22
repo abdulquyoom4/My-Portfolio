@@ -1,7 +1,7 @@
 const projects = [
   {
     id: 1,
-    tag: 'MERN · FULL STACK',
+    tag: 'MERN Stack',
     name: 'E-Commerce Platform',
     desc: 'Full-stack e-commerce platform for a sweets shop. Secure auth, product management, and order processing.',
     techs: ['React', 'Node.js', 'MongoDB', 'Tailwind v4'],
@@ -10,12 +10,21 @@ const projects = [
   },
   {
     id: 2,
-    tag: 'MERN',
-    name: 'Password Manager',
-    desc: 'Secure password manager with user authentication, encrypted storage, and a user-friendly interface.',
-    techs: ['React', 'Node.js', 'MongoDB', 'Tailwind v4'],
+    tag: 'React & TailwindCSS',
+    name: 'Landing Page',
+    desc: 'Responsive Landing page for my client. Clean design and mobile-friendly layout.',
+    techs: ['React', 'TailwindCSS v4'],
     github: 'https://github.com/abdulquyoom4',
-    demo: '',
+    demo: 'https://hassnat-portfolio.vercel.app/',
+  },
+  {
+    id: 3,
+    tag: 'Flutter & Firebase',
+    name: 'UOG Guide App',
+    desc: 'Flutter app for University of Gujrat students. Provides campus info, events, and resources.',
+    techs: ['Flutter', 'Firebase'],
+    github: 'https://github.com/abdulquyoom4',
+    demo: 'https://uogguide.app/',
   },
 ]
 
